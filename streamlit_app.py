@@ -33,3 +33,6 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Writes the normalized Json
 streamlit.dataframe(fruityvice_normalized)
+
+#The line shown below will tell your py file to use the library you added to the project
+import snowflake.connector
